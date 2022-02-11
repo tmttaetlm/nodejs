@@ -1,0 +1,21 @@
+<div class="banner <%= kicks == 0 ? 'show' : 'hide' %>">Реклама</div>
+<div class="main <%= kicks == 0 ? 'hide' : 'show' %>" id="main">
+    <div class="big-timer <%= game_started == 2 ? 'show' : 'hide' %>" id="big-timer">
+        <span id="timer-inner">60</span>
+    </div>
+    <!--<div class="big-power <%= power == 0 ? 'show' : 'hide' %>" id="big-power">
+        <span id="power-inner"></span>
+    </div>-->
+    <div class="record">
+        <div class="left" id="maskText">РЕКОРД</div>
+        <div class="right" id="record"><%= maxPower %></div>
+    </div>
+    <div class="kicks">
+        <div class="left">УДАРЫ</div>
+        <div class="right" id="kicks"><%= kicks %></div>
+    </div>
+    <div class="power">
+        <div class="left">СИЛА УДАРА</div>
+        <div class="right" id="power"><%= power %></div>
+    </div>
+</div>
